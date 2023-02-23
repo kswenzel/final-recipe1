@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+/*CSS RESET*/
+
+html,
+body,
+div,
+dt,
+dl,
+dd,
+ul,
+li,
+main,
+img,
+nav,
+header,
+a,
+footer,
+label,
+span,
+input,
+svg {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(122, 191, 191, 0.5);
+	min-width: 414px;
+	max-width: 1280px;
+}
+
+h2 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+
+}
+
+h1 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+
+}
+
+h3 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+
+}
+
+nav a {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+
+
+}
+
+nav span {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+
+}
+
+footer {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+
+}
+
+dd {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+
+}
+
+li {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+
+}
+
+nav {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+
+}
+
+input {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+
+}
+
+dt {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+
+#list ol {
+	list-style-type: circle;
+}
+
+
+.star {
+	fill: #eb5428;
+
+}
+
+.white {
+	fill: white;
+}
+
+.kitchen {
+	background-color: #eb5428;
+}
+
+#nav li:hover {
+	background-color: #7abfbf;
+}
+
+#social li:hover {
+	background-color: #7abfbf;
+}
+
+#picnav li:hover {
+	background-color: #7abfbf;
+}
+
+
+@media print {
+	@page {
+		margin: 0.5in;
+
+	}
+
+	body {
+		background-color: white;
+		font-family: 'Montserrat', sans-serif;
+
+	}
+
+	.search,
+	p,
+	svg,
+	#need,
+	nav,
+	img {
+		display: none;
+	}
+
+	a[href]::after {
+		content: " (" attr(href) ")";
+	}
+
+}
+
+@media screen and (min-width: 414px) {
+	body {
+		background-color: #f2f2f2;
+		margin: 30px;
+		min-width: 414px;
+		margin-top: 60px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	#tacos {
+
+		max-width: 414px;
+		height: auto;
+
+	}
+
+	#para {
+		padding: 10px;
+	}
+
+	#details {
+		text-align: center;
+		display: inline;
+	}
+
+	dl {
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		margin: 0
+	}
+
+	dt {
+		float: left;
+		width: 50%;
+		padding: 0;
+		margin: 0
+	}
+
+	dd {
+		float: left;
+		width: 50%;
+		padding: 0;
+		margin: 0
+	}
+
+	.infohead {
+		text-align: center;
+	}
+
+	.dishhead {
+		text-align: center;
+	}
+
+	#dishes {
+		background-color: #7abfbf;
+	}
+
+	#chef {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	#foot {
+		text-align: center;
+	}
+
+	.recipe {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 50px;
+		padding-left: 10px;
+	}
+
+	.text {
+		padding-left: 20px;
+	}
+
+	ol li {
+		margin-bottom: 20px;
+	}
+
+	#ilist li {
+		margin-bottom: 10px;
+	}
+
+	#nav {
+		margin-left: -25px;
+	}
+
+	#nav ol {
+		list-style: none;
+
+		margin: 0;
+		justify-content: center;
+		flex-wrap: wrap;
+		display: flex;
+		list-style: none;
+	}
+
+	#nav a {
+		max-width: 100px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #eb5428;
+	}
+
+	#nav li {
+		padding: 20px;
+		justify-content: center;
+
+	}
+
+	#nav div {
+		margin-left: 5px;
+	}
+
+	#nav .jump {
+		margin-left: -20px;
+	}
+
+	#social {
+		margin-left: -20px;
+	}
+
+	#social ol {
+		list-style: none;
+
+		margin: 0;
+		justify-content: center;
+		flex-wrap: wrap;
+		display: flex;
+		list-style: none;
+	}
+
+	#social a {
+		max-width: 100px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #eb5428;
+	}
+
+	#social li {
+		padding: 25px;
+	}
+
+	#social div {
+		margin-left: -10px;
+	}
+
+	#picnav ol {
+		list-style: none;
+
+		margin: 0;
+		justify-content: center;
+		flex-wrap: wrap;
+		display: flex;
+		list-style: none;
+	}
+
+	#picnav a {
+		font-weight: bold;
+		text-decoration: none;
+		color: #eb5428;
+	}
+
+	#picnav li {
+		width: 100px;
+
+	}
+
+	#picnav img {
+		width: 50%;
+		height: auto;
+	}
+
+	#picnav div {
+		margin-left: -5px;
+	}
+
+	#need {
+		background-color: #7abfbf;
+		padding: 10px;
+	}
+
+	ul {
+		overflow: hidden;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+
+
+	}
+
+	label {
+		cursor: pointer;
+		display: inline-block;
+		padding: 28px 20px;
+		position: relative;
+
+	}
+
+	label span {
+		background-color: #ffffff;
+		display: block;
+		height: 2px;
+		position: relative;
+		transition: background-color .2s ease-out;
+		width: 18px;
+	}
+
+	label span:before,
+	label span:after {
+		background: #ffffff;
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+		width: 100%;
+	}
+
+
+	input {
+		display: none;
+	}
+
+	input:checked~ul {
+		max-height: 500px;
+	}
+
+	input:checked~label span {
+		background: transparent;
+	}
+
+	input:checked~label span:before {
+		transform: rotate(-45deg);
+	}
+
+	input:checked~label span:after {
+		transform: rotate(45deg);
+	}
+
+	input:checked~label:not(.steps) span:before,
+	input:checked~label:not(.steps) span:after {
+		top: 0;
+	}
+
+
+	@media screen and (min-width:768px) {
+		ul {
+			overflow: visible;
+			position: absolute;
+			top: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		label span,
+		input {
+			display: none;
+		}
+	}
+
+	#mainmenu {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 414px;
+		margin-left: 50px;
+
+	}
+
+	.kitchen {
+		width: 200px;
+		margin-left: -70px;
+	}
+
+	#mainmenu {
+		position: absolute;
+		margin-top: -3400px;
+	}
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: #f2f2f2;
+		margin: 30px;
+		min-width: 768px;
+		margin-top: 80px;
+	}
+
+	#tacos {
+		max-width: 768px;
+		height: auto;
+		left: 0px;
+		right: 0px;
+	}
+
+	#details {
+		text-align: center;
+		display: inline;
+	}
+
+	dl {
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		margin: 0
+	}
+
+	dt {
+		float: left;
+		width: 50%;
+		padding: 0;
+		margin: 0
+	}
+
+	dd {
+		float: left;
+		width: 50%;
+		padding: 0;
+		margin: 0
+	}
+
+	#info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		width: 100%;
+	}
+
+	.child {
+		margin: 10px;
+	}
+
+	.infohead {
+		text-align: center;
+	}
+
+	.dishhead {
+		text-align: center;
+	}
+
+	#need {
+		background-color: #7abfbf;
+		padding: 10px;
+
+	}
+
+	#dishes {
+		background-color: #7abfbf;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.dchild {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 25%;
+		height: auto;
+	}
+
+	#picnav {
+		background-color: #f2f2f2;
+
+
+	}
+
+	#picnav ul {
+		list-style: none;
+		background-color: #f2f2f2;
+
+		margin: 0;
+		justify-content: center;
+		flex-wrap: wrap;
+		display: flex;
+		list-style: none;
+	}
+
+	#picnav a {
+		font-weight: bold;
+		text-decoration: none;
+		color: #eb5428;
+		background-color: #f2f2f2;
+
+	}
+
+	#picnav li {
+		background-color: #f2f2f2;
+	}
+
+	#picnav img {
+		width: 50%;
+		height: auto;
+	}
+
+	#picnav div {
+		margin-left: -5px;
+	}
+
+	.recipe {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 50px;
+		padding-left: 10px;
+	}
+
+	.text {
+		padding-left: 20px;
+	}
+
+	#social ul {
+		margin-left: 300px;
+	}
+
+	#chef {
+		display: block;
+		margin-left: 100px;
+		margin-right: -100px;
+		width: 25%;
+	}
+
+	.recipe {
+		margin-right: 50px;
+	}
+
+	#nav {
+		position: absolute;
+		margin-bottom: -110px;
+		background-color: rgba(255, 255, 255, 0.5);
+		width: 768px;
+		margin-left: -1px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+
+	h1 {
+		margin-right: 800px;
+	}
+
+	#nav li {
+		padding: 10px;
+		padding-left: 60px;
+		padding-right: 60px;
+		justify-content: center;
+
+
+	}
+
+	.kitchen {
+		margin-top: 395px;
+		height: 80px;
+		width: 80px;
+		margin-left: -230px;
+		position: absolute;
+
+	}
+
+	#navy {
+		margin-left: 30px;
+	}
+}
+
+
+@media screen and (min-width: 1300px) {
+	body {
+		background-color: #f2f2f2;
+		margin: 30px;
+		min-width: 1280px;
+		margin-top: 100px;
+	}
+
+	#tacos {
+
+		max-width: 414px;
+		height: auto;
+		left: 0px;
+		right: 0px;
+		margin-left: 100px;
+	}
+
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		width: 100%;
+	}
+
+	#details {
+		text-align: center;
+		border: #7abfbf;
+		color: #7abfbf;
+
+	}
+
+	dl {
+		background-color: black;
+		margin-top: -25px;
+	}
+
+	.detailhead {
+		background-color: black;
+	}
+
+	#social ul {
+		margin-left: 800px;
+
+
+	}
+
+	#dishes {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+	}
+
+	.recipe {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-left: 25px;
+	}
+
+	#nav ol {
+		background-color: #f2f2f2;
+		margin: 0;
+		padding: 0;
+		width: 100px;
+
+	}
+
+	li a {
+		display: block;
+		padding: 8px 16px;
+
+	}
+
+	#nav {
+		width: 100px;
+	}
+
+	.kitchen {
+		margin-top: 1430px;
+		height: 80px;
+		width: 80px;
+		margin-left: -230px;
+		position: absolute;
+
+	}
+
+	.avatar {
+		margin-top: 1430px;
+		margin-left: 950px;
+		height: 80px;
+		width: 80px;
+		position: absolute;
+		fill: #eb5428;
+
+	}
+}
